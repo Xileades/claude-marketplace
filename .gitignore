@@ -1,0 +1,13 @@
+# Credentials never belong here.
+tokens.json
+*.key
+*.pem
+*.pfx
+*secret*
+*credential*
+
+node_modules/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

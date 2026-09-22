@@ -1,28 +1,51 @@
 {
   "name": "xileades",
-  "owner": { "name": "Xileades / Groupe X-ARC", "email": "a.mercado@xileades.com" },
-  "metadata": {
-    "description": "Internal Claude tooling for Xileades and the X-ARC group: banking, payroll and accounting API toolkits.",
-    "version": "1.0.0"
+  "owner": {
+    "name": "Xileades",
+    "email": "a.mercado@xileades.com",
+    "url": "https://github.com/Xileades"
   },
+  "description": "Open PowerShell + Claude toolkits for French business APIs — Qonto, PayFit and Pennylane — built for multi-company groups. Each plugin ships a library, skills and a pitfalls catalogue paid for in production.",
+  "version": "1.1.0",
   "plugins": [
     {
       "name": "qonto-api-toolkit",
+      "displayName": "Qonto API Toolkit",
       "source": { "source": "github", "repo": "Xileades/qonto-api-toolkit" },
-      "description": "Qonto Business API: multi-company balances, transactions, statements. Read-only.",
-      "category": "finance"
+      "description": "Qonto Business API across several companies: one key per organization, group balances, transactions, statements, pagination and rate limits. Read-only.",
+      "category": "finance",
+      "keywords": ["qonto", "banking", "api", "powershell", "multi-company", "france"],
+      "author": { "name": "Xileades" },
+      "homepage": "https://github.com/Xileades/qonto-api-toolkit",
+      "license": "MIT",
+      "strict": true,
+      "defaultEnabled": false
     },
     {
       "name": "payfit-api-toolkit",
+      "displayName": "PayFit API Toolkit",
       "source": { "source": "github", "repo": "Xileades/payfit-api-toolkit" },
-      "description": "PayFit API with a customer API key: companies, collaborators, absences, payroll safety rules.",
-      "category": "finance"
+      "description": "PayFit partner API with a customer API key: companies, collaborators, absences, contracts, and the safety rules that keep payroll reads from turning into payroll writes.",
+      "category": "finance",
+      "keywords": ["payfit", "payroll", "hr", "api", "powershell", "france"],
+      "author": { "name": "Xileades" },
+      "homepage": "https://github.com/Xileades/payfit-api-toolkit",
+      "license": "MIT",
+      "strict": true,
+      "defaultEnabled": false
     },
     {
       "name": "pennylane-api-toolkit",
+      "displayName": "Pennylane API Toolkit",
       "source": { "source": "github", "repo": "Xileades/pennylane-api-toolkit" },
-      "description": "Pennylane Company API v2: access, supplier and customer invoices, reconciliation, accounting exports, analysis.",
-      "category": "finance"
+      "description": "Pennylane Company API v2 in a multi-company setup: access layer, supplier and customer invoices, bank reconciliation (lettrage), accounting exports (FEC, ledger, trial balance) and read-only analysis.",
+      "category": "finance",
+      "keywords": ["pennylane", "accounting", "invoicing", "fec", "api", "powershell", "france"],
+      "author": { "name": "Xileades" },
+      "homepage": "https://github.com/Xileades/pennylane-api-toolkit",
+      "license": "MIT",
+      "strict": true,
+      "defaultEnabled": false
     }
   ]
 }
